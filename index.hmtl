@@ -1,0 +1,131 @@
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Levell Mack</title>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100;400&family=Elsie+Swash+Caps:wght@400;900&family=Six+Caps&display=swap" rel="stylesheet">
+    <!--Alpine.js-->
+    <script defer src="https://unpkg.com/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <!--Tailwind CSS-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              fontFamily: {
+                'elise': ['Elsie Swash Caps', 'cursive'],
+                'antonio': ['Antonio', 'sans-serif'],
+                'six-caps': ['Six Caps', 'sans-serif']
+              },
+              letterSpacing: {
+                  'custom': '.01em'
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body x-data="{shown: false}" x-intersect="shown=true" class="grid lg:justify-center w-full font-antonio font-light subpixel-antialiased bg-zinc-900 text-white">
+    <!--Page Wrapper-->
+    <div class="grid gap-y-20 w-full lg:w-[1000px] relative">
+    <!--Navbar-->
+    <nav x-data="{shown: false}" x-intersect="shown = true" class="w-full z-50">
+        <div x-show="shown" 
+            x-transition:enter="transition-all ease-out duration-500 delay-[500ms]" 
+            x-transition:enter-start="-translate-y-24 opacity-0" 
+            x-transition:enter-end="translate-y-0 opacity-100" 
+            class="p-4 pr-0 w-full lg:w-[1000px] grid grid-cols-2 items-center backdrop-blur-sm fixed left-0 right-0 mr-auto ml-auto border-b-[1px]">
+        <!--Brand-->
+        <div class="cursor-pointer text-3xl font-normal leading-[1.5rem]">
+            <div class="w-20 hover:text-sky-200 transition-colors duration-300">
+                <a href="#">levell 
+                    <span class="text-sky-400">mack</span>.
+                </a>
+            </div>
+        </div>
+        <!--Nav Links-->
+        <ul class="flex grid-cols-4 justify-self-end text-xl sm:text-2xl font-antonio">
+            <li class=""><a href="#about" class="hover:underline transition-colors duration-300 sm:px-4 px-2 py-2">about</a></li>
+            <li class=""><a href="#projects" class="hover:underline transition-colors duration-300 sm:px-4 px-2 py-2">projects</a></li>
+            <li class=""><a href="#contact" class="hover:underline transition-colors duration-300 px-4 py-2">contact</a></li>
+        </ul>
+        </div>
+    </nav>
+    <!--Home-->
+    <div id="home" class="grid gap-16 w-full p-4">
+        <div x-data="{shown: false}" x-intersect="shown = true" class="grid self-end">
+            <div class=" w-fit grid gap-x-2 pt-8 text-[10rem] md:text-[10rem] xl:text-[10rem] leading-none font-six-caps ">
+                <div x-show="shown" x-transition.duration.500ms.delay.400ms class="text-sky-400 text-5xl font-elise self-end justify-self-start">passionate</div>
+                <h1 x-show="shown" x-transition.duration.500ms.delay.300ms class="">Front-End Developer</h1>
+            </div>
+            <h2 x-show="shown" x-transition.duration.500ms.delay.500ms class="text-3xl text-zinc-500 tracking-custom">watching my code come to life fuels my passion for front-end development.</h2>
+        </div>
+        <div x-data="{shown: false}" x-intersect.half="shown = true" class="grid self-start justify-end">
+            <div class="grid grid-cols-[auto,1fr]">
+                <div class="lg:flex grid grid-cols-[auto,1fr] text-right justify-self-end gap-x-4 w-fit text-[6rem] leading-none">
+                    <div x-show="shown" x-transition.duration.500ms.delay.300ms class="">I am</div>
+                    <p x-show="shown" x-transition.duration.500ms.delay.100ms class=" text-sky-400 self-end">levell</p>
+                    <div x-show="shown" x-transition.duration.500ms.delay.300ms class=" col-start-2">mack</div>
+                </div>
+                <div x-show="shown" x-transition.duration.500ms.delay.700ms class="text-2xl font-elise text-sky-400">hello!</div>
+                <div x-show="shown" x-transition.duration.500ms.delay.400ms class="text-5xl text-right text-zinc-500">i am a front-end developer. based in california.</div>
+            </div>
+        </div>
+        <div x-data="{shown: false}" x-intersect.half="shown=true" class="grid w-[85%] sm:w-[65%] lg:text-2xl text-xl lg:pl-16 pl-4">
+            <p x-show="shown" x-transition.duration.500ms.delay.900ms >I create websites and web based applications in HTML, CSS, Javascript, React and more.</p>
+        </div>
+        <div x-data="{shown: false}" x-intersect.half="shown=true"
+            class="grid w-[85%] sm:w-[65%] lg:text-2xl text-xl lg:pr-16 pr-4 justify-self-end text-right">
+            <p x-show="shown" x-transition.duration.500ms.delay.900ms>I predominantly use frameworks and libraries when creating new projects. My favorite CSS framework is TailwindCSS and the library I use the most is React. I'm currently learning Astro.</p>
+        </div>
+    </div>
+    <!--About-->
+    <div id="about" x-data="{shown: false}" x-intersect.half="shown = true" class="grid min-h-[128px] gap-4 mt-4 p-4">
+        <p x-show="shown" x-transition.duration.500ms class="text-8xl text-sky-400">this is me.</p>
+        <p x-show="shown" x-transition.duration.500ms.delay.300ms class="text-4xl text-zinc-500 font-elise self-end">hajimemashite!</p>
+        <div x-data="{shown: false}" x-intersect.half="shown=true" class="grid lg:w-[80%] w-[90%] lg:text-2xl text-xl">
+            <p x-show="shown" x-transition.duration.500ms.delay.500ms >Hello, again! My name is Levell. I'm a front-end developer currently located in
+                Southern California. I studied computer science at California State University, San
+                Bernardino, where I recieved my B.S. in Computer Science in 2021. I am always searching for opportunities that will allow me to develop and
+                grow further in frontend development.</p>
+        </div>
+    </div>
+    <!--Projects-->
+    <div id="projects" class="grid gap-16 ">
+        <div x-data="{shown: false}" x-intersect.half="shown = true" class="pl-4">
+            <h1 x-show="shown" x-transition.duration.500ms class="text-9xl font-six-caps text-sky-400">What I've</h1>
+            <p x-show="shown" x-transition.duration.500ms.delay.300ms class="text-6xl text-zinc-500 font-elise">worked</p>
+            <h1 x-show="shown" x-transition.duration.500ms.delay.500ms class="text-9xl font-six-caps text-sky-400"> on.</h1>
+        </div>
+        <div class="flex justify-center gap-16 px-4 flex-wrap">
+            <div x-show="shown" x-transition.duration.500ms.delay.500ms class="bg-sky-400 w-64 h-64"></div>
+            <div x-show="shown" x-transition.duration.500ms.delay.700ms class="bg-sky-400 w-64 h-64"></div>
+            <div x-show="shown" x-transition.duration.500ms.delay.900ms class="bg-sky-400 w-64 h-64"></div>
+            </div>
+        </div>
+        <!--Contact-->
+        <div id="contact" x-data="{shown: false}" x-intersect.half="shown = true"
+            class="grid gap-16">
+            <div class="sm:flex grid grid-cols-[auto,1fr] gap-x-2 pl-4 sm:pl-0 sm:text-center sm:justify-self-center">
+                <h1 x-show="shown" x-transition.duration.500ms class="text-9xl font-six-caps text-sky-400">How to</h1>
+                <p x-show="shown" x-transition.duration.500ms.delay.300ms class="text-4xl text-zinc-500">reach</p>
+                <h1 x-show="shown" x-transition.duration.500ms.delay.500ms class="text-9xl font-elise text-sky-400">me.</h1>
+            </div>
+            <div x-data="{shown: false}" x-intersect.half="shown=true"
+                class="grid w-[85%] sm:w-[65%] text-3xl sm-4xl text-center justify-self-center">
+                <a href="mailto: levellmack@gmail.com" x-show="shown" x-transition.duration.500ms.delay.700ms
+                    class="hover:underline">levellmack@gmail.com</a>
+            </div>
+        </div>
+        <!--Footer-->
+        <footer class="grid place-content-center p-8 bg-sky-400 text-black">Copyright © 2022 Levell Mack. All rights reserved.
+        </footer>
+    </div>
+</div>
+</body>
+</html>
