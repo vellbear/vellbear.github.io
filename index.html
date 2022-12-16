@@ -34,12 +34,12 @@
     <!--Page Wrapper-->
     <div class="grid gap-y-20 w-full lg:w-[1000px] relative">
     <!--Navbar-->
-    <nav data-aos="fade-down" data-aos-duration="700" class="w-full z-50">
+    <nav data-aos="fade-down" data-aos-duration="700" data-aos-anchor-placement="top-bottom" class="w-full z-50 fixed mx-auto right-0 left-0">
         <div  
             class="p-4 pr-0 w-full lg:w-[1000px] grid grid-cols-2 items-center backdrop-blur-sm fixed left-0 right-0 mr-auto ml-auto border-b-[1px]">
         <!--Brand-->
         <div class="cursor-pointer text-3xl font-normal leading-[1.5rem]">
-            <div class="w-20 hover:text-sky-200 transition-colors duration-300">
+            <div class="w-20 hover:text-sky-400 transition-colors duration-300">
                 <a href="#">levell 
                     <span class="text-sky-400">mack</span>.
                 </a>
@@ -47,22 +47,22 @@
         </div>
         <!--Nav Links-->
         <ul class="flex grid-cols-4 justify-self-end text-xl sm:text-2xl font-antonio">
-            <li data-aos="zoom-out-down" data-aos-duration="700" data-aos-delay="300" class=""><a href="#about" class="hover:underline transition-colors duration-300 sm:px-4 px-2 py-2">about</a></li>
-            <li data-aos="zoom-out-down" data-aos-duration="700" data-aos-delay="500" class=""><a href="#projects" class="hover:underline transition-colors duration-300 sm:px-4 px-2 py-2">projects</a></li>
-            <li data-aos="zoom-out-down" data-aos-duration="700" data-aos-delay="700" class=""><a href="#contact" class="hover:underline transition-colors duration-300 px-4 py-2">contact</a></li>
+            <li data-aos="zoom-out-down" data-aos-duration="700" data-aos-delay="300" data-aos-anchor-placement="top-bottom" class=""><a href="#about" class="hover:underline transition-colors duration-300 sm:px-4 px-2 py-2">about</a></li>
+            <li data-aos="zoom-out-down" data-aos-duration="700" data-aos-delay="500" data-aos-anchor-placement="top-bottom" class=""><a href="#projects" class="hover:underline transition-colors duration-300 sm:px-4 px-2 py-2">projects</a></li>
+            <li data-aos="zoom-out-down" data-aos-duration="700" data-aos-delay="700" data-aos-anchor-placement="top-bottom" class=""><a href="#contact" class="hover:underline transition-colors duration-300 px-4 py-2">contact</a></li>
         </ul>
         </div>
     </nav>
     <!--Home-->
-    <div id="home" class="grid gap-16 w-full p-4">
-        <div data-aos="fade-right" data-aos-duration="700" data-aos-delay="300" class="grid self-end">
+    <div id="home" class="grid gap-16 w-full p-4 mt-20">
+        <div data-aos="fade-right" data-aos-duration="700" data-aos-delay="300" data-aos-anchor-placement="top-bottom" class="grid self-end">
             <div class=" w-fit grid gap-x-2 pt-8 text-[10rem] md:text-[10rem] xl:text-[10rem] leading-none font-six-caps ">
                 <div  class="text-sky-400 text-5xl font-elise self-end justify-self-start">passionate</div>
                 <h1  class="">Front-End Developer</h1>
             </div>
             <h2  class="text-3xl text-zinc-500 tracking-custom">watching my code come to life fuels my passion for front-end development.</h2>
         </div>
-        <div data-aos="fade-left" data-aos-duration="700" data-aos-delay="500" class="grid self-start justify-end">
+        <div data-aos="fade-left" data-aos-duration="700" data-aos-delay="500" data-aos-anchor-placement="top-bottom" class="grid self-start justify-end">
             <div class="grid grid-cols-[auto,1fr]">
                 <div class="lg:flex grid grid-cols-[auto,1fr] text-right justify-self-end gap-x-4 w-fit text-[6rem] leading-none">
                     <div  class="">I am</div>
@@ -73,16 +73,16 @@
                 <div  class="text-5xl text-right text-zinc-500">i am a front-end developer. based in california.</div>
             </div>
         </div>
-        <div data-aos="fade-right" data-aos-duration="700" data-aos-delay="300" class="grid w-[85%] sm:w-[65%] lg:text-2xl text-xl lg:pl-16 pl-4">
+        <div data-aos="fade-right" data-aos-duration="700" data-aos-delay="300" data-aos-anchor-placement="top-bottom" class="grid w-[85%] sm:w-[65%] lg:text-2xl text-xl lg:pl-16 pl-4">
             <p  >I create websites and web based applications in HTML, CSS, Javascript, React and more.</p>
         </div>
-        <div data-aos="fade-left" data-aos-duration="700" data-aos-delay="300"
+        <div data-aos="fade-left" data-aos-duration="700" data-aos-delay="300" data-aos-anchor-placement="top-bottom"
             class="grid w-[85%] sm:w-[65%] lg:text-2xl text-xl lg:pr-16 pr-4 justify-self-end text-right">
             <p >I predominantly use frameworks and libraries when creating new projects. My favorite CSS framework is TailwindCSS and the library I use the most is React. I'm currently learning Astro.</p>
         </div>
     </div>
     <!--About-->
-    <div data-aos="fade-right" data-aos-duration="700" data-aos-delay="300" id="about"  class="grid min-h-[128px] gap-4 mt-4 p-4">
+    <div data-aos="fade-right" data-aos-duration="700" data-aos-delay="300" data-aos-anchor-placement="top-bottom" id="about"  class="grid min-h-[128px] gap-4 p-4 pt-24 -mt-24">
         <p  class="text-8xl text-sky-400">this is me.</p>
         <p  class="text-4xl text-zinc-500 font-elise self-end">hajimemashite!</p>
         <div  class="grid lg:w-[80%] w-[90%] lg:text-2xl text-xl">
@@ -93,27 +93,27 @@
         </div>
     </div>
     <!--Projects-->
-    <div id="projects" class="grid gap-16 ">
-        <div data-aos="fade-right" data-aos-duration="700" data-aos-delay="300" class="pl-4">
+    <div id="projects" class="grid gap-16 pt-24 -mt-24">
+        <div data-aos="fade-right" data-aos-duration="700" data-aos-delay="300" data-aos-anchor-placement="top-bottom" class="pl-4">
             <h1  class="text-9xl font-six-caps text-sky-400">What I've</h1>
             <p  class="text-6xl text-zinc-500 font-elise">worked</p>
             <h1  class="text-9xl font-six-caps text-sky-400"> on.</h1>
         </div>
         <div class="flex justify-center gap-16 px-4 flex-wrap">
-            <div data-aos="zoom-out-up" data-aos-duration="700" data-aos-delay="500" class="bg-sky-400 w-64 h-64"></div>
-            <div data-aos="zoom-out-up" data-aos-duration="700" data-aos-delay="700" class="bg-sky-400 w-64 h-64"></div>
-            <div data-aos="zoom-out-up" data-aos-duration="700" data-aos-delay="900" class="bg-sky-400 w-64 h-64"></div>
+            <div data-aos="zoom-out-up" data-aos-duration="700" data-aos-delay="500" data-aos-anchor-placement="top-bottom" class="bg-sky-400 w-64 h-64"></div>
+            <div data-aos="zoom-out-up" data-aos-duration="700" data-aos-delay="700" data-aos-anchor-placement="top-bottom" class="bg-sky-400 w-64 h-64"></div>
+            <div data-aos="zoom-out-up" data-aos-duration="700" data-aos-delay="900" data-aos-anchor-placement="top-bottom" class="bg-sky-400 w-64 h-64"></div>
         </div>
     </div>
         <!--Contact-->
         <div id="contact" 
             class="grid gap-16">
-            <div data-aos="zoom-in-up" data-aos-duration="500" data-aos-delay="300" class="sm:flex grid grid-cols-[auto,1fr] gap-x-2 pl-4 sm:pl-0 sm:text-center sm:justify-self-center">
+            <div data-aos="zoom-in-up" data-aos-duration="500" data-aos-delay="300" data-aos-anchor-placement="top-bottom" class="sm:flex grid grid-cols-[auto,1fr] gap-x-2 pl-4 sm:pl-0 sm:text-center sm:justify-self-center">
                 <h1  class="text-9xl font-six-caps text-sky-400">How to</h1>
                 <p class="text-4xl text-zinc-500">reach</p>
                 <h1  class="text-9xl font-elise text-sky-400">me.</h1>
             </div>
-            <div data-aos="zoom-out-up" data-aos-duration="500" data-aos-delay="300"
+            <div data-aos="zoom-out-up" data-aos-duration="500" data-aos-delay="300" data-aos-anchor-placement="top-bottom"
                 class="grid w-[85%] sm:w-[65%] text-3xl sm-4xl text-center justify-self-center">
                 <a href="mailto: levellmack@gmail.com" 
                     class="hover:underline">levellmack@gmail.com</a>
