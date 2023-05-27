@@ -1,0 +1,19 @@
+[
+  {
+    "name": "Clockwork",
+    "type": "personal",
+    "tags": ["React", "Tailwind CSS"],
+    "github": "https://github.com/Llxovell/clockwork/",
+    "link": "https://llxovell-clockwork.netlify.app/",
+    "img": "/assets/clockwork_preview.png",
+    "alt": "clockwork_preview"
+  },
+  {
+    "name": "Guzman Portfolio",
+    "type": "client",
+    "tags": ["HTML", "Javascript", "CSS"],
+    "link": "https://melissag.netlify.app/",
+    "img": "/assets/guzman_portfolio_preview.png",
+    "alt": "guzman_portfolio_preview"
+  }
+]
