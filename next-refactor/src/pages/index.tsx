@@ -1,6 +1,9 @@
 import Head from "next/head";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Hero from "@/components/Hero";
+import About from "@/components/About";
+import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
@@ -13,6 +16,9 @@ export default function Home() {
       </Head>
       <main className="grid gap-y-20 lg:w-[1000px] min-w-screen relative">
         <Navbar links={["about", "projects", "contact"]} />
+        <Hero />
+        <About />
+        <Contact />
         <Footer />
       </main>
     </>

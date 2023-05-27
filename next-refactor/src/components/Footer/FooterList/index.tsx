@@ -1,6 +1,11 @@
 import { FooterListProps } from "./types";
 
-function FooterList({ listTitle, listSubtitle, listItems }: FooterListProps) {
+function FooterList({
+  listTitle,
+  listSubtitle,
+  listItems,
+  target,
+}: FooterListProps) {
   return (
     <div className="grid gap-1 h-fit text-2xl sm:text-base">
       <p className="uppercase text-sky-400">{listTitle}</p>
@@ -13,7 +18,7 @@ function FooterList({ listTitle, listSubtitle, listItems }: FooterListProps) {
         {listItems.map((item, index) => (
           <li key={index}>
             <a
-              target="_blank"
+              target={target ? "" : "_blank"}
               href={item.link}
               title={item.title}
               className="hover:underline hover:text-white underline-offset-2 transition-colors duration-300 py-2"
