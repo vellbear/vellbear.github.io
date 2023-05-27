@@ -42,7 +42,7 @@ function Icon({ type, link }: IconProps) {
   };
   return (
     <a href={link} target="_blank">
-      {type ? <ExternalLinkIcon /> : <GithubIcon />}
+      {type ? <GithubIcon /> : <ExternalLinkIcon />}
     </a>
   );
 }

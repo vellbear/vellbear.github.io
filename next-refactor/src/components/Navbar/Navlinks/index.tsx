@@ -6,7 +6,10 @@ function NavLinks({ links }: NavbarProps) {
       {links.map((link) => (
         <>
           <li>
-            <a className="hover:underline transition-colors duration-300 sm:px-4 px-2 py-2 cursor-pointer">
+            <a
+              className="hover:underline transition-colors duration-300 sm:px-4 px-2 py-2 cursor-pointer"
+              href={"#" + link}
+            >
               {link}
             </a>
           </li>

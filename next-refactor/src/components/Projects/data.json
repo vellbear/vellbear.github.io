@@ -15,5 +15,41 @@
     "link": "https://melissag.netlify.app/",
     "img": "/assets/guzman_portfolio_preview.png",
     "alt": "guzman_portfolio_preview"
+  },
+  {
+    "name": "Ecommerce Product Page",
+    "type": "challenge",
+    "tags": ["Frontend Mentor", "React", "Tailwind CSS", "Astro"],
+    "github": "https://github.com/Llxovell/frontend-mentor-challenges/tree/main/ecommerce-product-page-main/",
+    "link": "https://llxovell-eccomerce-product-page.netlify.app/",
+    "img": "/assets/eccomerce_preview.png",
+    "alt": "ecommerce_preview"
+  },
+  {
+    "name": "Loopstudios Landing Page",
+    "type": "challenge",
+    "tags": ["Frontend Mentor", "HTML", "Javascript", "Tailwind CSS"],
+    "github": "https://github.com/Llxovell/frontend-mentor-challenges/tree/main/loopstudios-landing-page-main/",
+    "link": "https://llxovell.github.io/frontend-mentor-challenges/loopstudios-landing-page-main/",
+    "img": "/assets/loopstudios_preview.png",
+    "alt": "loopstudios_preview"
+  },
+  {
+    "name": "Product Preview Card Component",
+    "type": "challenge",
+    "tags": ["Frontend Mentor", "HTML", "Javascript", "Tailwind CSS"],
+    "github": "https://llxovell.github.io/frontend-mentor-challenges/product-preview-card-component-main/home/",
+    "link": "https://github.com/Llxovell/frontend-mentor-challenges/tree/main/product-preview-card-component-main/",
+    "img": "/assets/product_card_preview.png",
+    "alt": "product_card_preview"
+  },
+  {
+    "name": "3 Column Preview Card Component",
+    "type": "challenge",
+    "tags": ["Frontend Mentor", "HTML", "Javascript", "Tailwind CSS"],
+    "github": "https://github.com/Llxovell/frontend-mentor-challenges/tree/main/3-column-preview-card-component-main/",
+    "link": "https://llxovell.github.io/frontend-mentor-challenges/3-column-preview-card-component-main/",
+    "img": "/assets/3_column_card_preview.png",
+    "alt": "3_column_card_preview"
   }
 ]

@@ -23,7 +23,7 @@ function Project({ name, type, tags, github, link, img, alt }: ProjectsProps) {
           <Icon link={link} />
         </div>
       </div>
-      <a className="cursor-pointer">
+      <a className="cursor-pointer" href={link}>
         <Image src={img} alt={alt} width="1440" height="900" />
       </a>
     </div>
