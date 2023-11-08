@@ -1,5 +1,12 @@
-import Image from "next/image";
+import SideNav from "@/components/SideNav";
+import { NAV_ITEMS } from "../constants.js";
 
 export default function Home() {
-  return <main className=""></main>;
+  return (
+    <>
+      <SideNav listItems={NAV_ITEMS.left} left></SideNav>
+      <SideNav listItems={NAV_ITEMS.right}></SideNav>
+      <main className=""></main>
+    </>
+  );
 }

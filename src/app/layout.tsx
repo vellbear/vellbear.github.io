@@ -1,8 +1,24 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Gravitas_One, Oswald, Arvo } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const arvo = Arvo({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-arvo",
+});
+
+const oswald = Oswald({
+  subsets: ["latin"],
+  weight: "700",
+  variable: "--font-oswald",
+});
+
+const gravitas = Gravitas_One({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-gravitas",
+});
 
 export const metadata: Metadata = {
   title: "Levell Mack",
@@ -15,8 +31,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html
+      lang="en"
+      className={`${arvo.variable} ${oswald.variable} ${gravitas.variable}`}
+    >
+      <body className="relative font-arvo">{children}</body>
     </html>
   );
 }
