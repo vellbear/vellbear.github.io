@@ -15,7 +15,7 @@ export default function SideNav({ listItems, left }: SideNavProps) {
   return (
     <nav
       style={styles.nav}
-      className="fixed font-gravitas uppercase grid items-center justify-center min-h-screen h-screen border-white border-x-2 w-14 [writing-mode:vertical-lr]"
+      className="hidden sm:grid fixed font-gravitas uppercase items-center justify-center min-h-screen h-screen border-white border-x-2 w-14 [writing-mode:vertical-lr] z-50"
     >
       <ul className="flex gap-6 text-center">
         {listItems.map((item, index) => (
