@@ -7,7 +7,7 @@ export default function Home() {
     <>
       <SideNav listItems={NAV_ITEMS.left} left></SideNav>
       <SideNav listItems={NAV_ITEMS.right}></SideNav>
-      <main className="mx-36">
+      <main className="">
         <Hero />
       </main>
     </>

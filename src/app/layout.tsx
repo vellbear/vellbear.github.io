@@ -35,7 +35,9 @@ export default function RootLayout({
       lang="en"
       className={`${arvo.variable} ${oswald.variable} ${gravitas.variable}`}
     >
-      <body className="relative font-arvo">{children}</body>
+      <body className="relative font-arvo text-white bg-dark-knight">
+        {children}
+      </body>
     </html>
   );
 }
