@@ -6,8 +6,8 @@ interface SideNavProps {
 export default function SideNav({ listItems, left }: SideNavProps) {
   const styles = {
     nav: {
-      left: left ? "16px" : "",
-      right: left ? "" : "16px",
+      left: left ? "32px" : "",
+      right: left ? "" : "32px",
       transform: left ? "scale(-1,-1)" : "",
     },
   };

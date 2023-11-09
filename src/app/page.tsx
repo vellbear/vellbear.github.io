@@ -1,3 +1,4 @@
+import Hero from "@/components/Hero";
 import SideNav from "@/components/SideNav";
 import { NAV_ITEMS } from "../constants.js";
 
@@ -6,7 +7,9 @@ export default function Home() {
     <>
       <SideNav listItems={NAV_ITEMS.left} left></SideNav>
       <SideNav listItems={NAV_ITEMS.right}></SideNav>
-      <main className=""></main>
+      <main className="mx-36">
+        <Hero />
+      </main>
     </>
   );
 }
