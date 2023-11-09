@@ -1,11 +1,11 @@
 export default function Hero() {
   return (
-    <section className="grid [grid:stack] font-oswald ml-24 mr-32 pt-20">
+    <section className="grid justify-center [grid:stack] font-oswald ml-24 mr-32 pt-20">
       <h1 className="grid text-[27.5vw] col-start-1 row-start-1 uppercase">
         <span className="justify-self-start leading-none text-joker-green">
           Levell
         </span>
-        <span className="relative justify-self-end leading-none text-joker-purple after:absolute after:content-['based_in_California'] after:text-[10%] after:right-0 after:text-white after:top-1/2">
+        <span className="relative justify-self-end leading-none text-joker-purple after:normal-case after:absolute after:content-['based_in_California'] after:text-[13%] after:right-0 after:text-white after:top-[48%]">
           Mack
         </span>
       </h1>
