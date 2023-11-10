@@ -22,6 +22,13 @@ const config: Config = {
         "dark-knight": "#1D1D1D",
         "joker-green": "#57CC4D",
         "joker-purple": "#8C4DCC",
+        "joker-red": "#CC4D54",
+      },
+      animation: {
+        fadein: "fadein 1s ease-in-out forwards",
+      },
+      keyframes: {
+        fadein: { from: { opacity: "0" }, to: { opacity: "1" } },
       },
     },
   },

@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
     <section className="grid [grid:stack] font-oswald sm:px-24 pt-20 max-w-screen">
-      <h1 className="grid text-[27.5vw] col-start-1 row-start-1 uppercase">
+      <h1 className="grid text-[22.5vw] col-start-1 row-start-1 uppercase">
         <span className="ml-3 leading-none justify-self-start text-joker-green">
           Levell
         </span>

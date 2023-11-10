@@ -9,20 +9,18 @@ export default function SideNav({ listItems, left }: SideNavProps) {
       left: left ? "32px" : "",
       right: left ? "" : "32px",
       transform: left ? "scale(-1,-1)" : "",
+      textTransform: left ? "uppercase" : "lowercase",
     },
   };
 
   return (
     <nav
       style={styles.nav}
-      className="hidden sm:grid fixed font-gravitas uppercase items-center justify-center min-h-screen h-screen border-white border-x-2 w-14 [writing-mode:vertical-lr] z-50"
+      className="transition-colors text-joker-red duration-300 hidden sm:grid fixed font-gravitas lowercase items-center justify-center min-h-screen h-screen border-white border-x-2 w-12 [writing-mode:vertical-lr] z-50"
     >
       <ul className="flex gap-6 text-center">
         {listItems.map((item, index) => (
-          <li
-            className="hover:underline underline-offset-2"
-            key={item.text + index}
-          >
+          <li className="hover:text-joker-purple" key={item.text + index}>
             <a href={item.href}>{item.text}</a>
           </li>
         ))}
