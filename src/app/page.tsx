@@ -12,22 +12,19 @@ export default function Home() {
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
-      setMousePosition({ x: e.pageX, y: e.pageY });
+      setMousePosition({ x: e.clientX, y: e.clientY });
       setIsMouseMoving(true);
 
       clearTimeout(timer);
       timer = setTimeout(() => setIsMouseMoving(false), 500);
     };
 
-    const handleScroll = (e: Event) => {
-      // TODO: Move crosshair when page is scrolled.
-      // setMousePosition((prevMousePosition) => ({
-      //   ...mousePosition,
-      //   y: mousePosition.y + 2.5,
-      // }));
+    const handleScroll = () => {
+      setIsMouseMoving(true);
+      timer = setTimeout(() => setIsMouseMoving(false), 500);
     };
 
-    let timer: NodeJS.Timeout;
+    let timer: ReturnType<typeof setTimeout>;
 
     document.addEventListener("mousemove", handleMouseMove);
     document.addEventListener("scroll", handleScroll);
@@ -51,7 +48,7 @@ export default function Home() {
               left: mousePosition.x + "px",
               top: mousePosition.y + "px",
             }}
-            className="pointer-events-none absolute realtive z-50 before:h-[2px] before:overflow-hidden after:overflow-hidden before:absolute before:w-[200vw] before:bg-white before:-translate-x-1/2 after:h-[200vh] after:absolute after:w-[2px] after:bg-white after:-translate-y-1/2"
+            className="pointer-events-none fixed realtive z-50 before:h-[1px] before:overflow-hidden after:overflow-hidden before:absolute before:w-[200vw] before:bg-white before:-translate-x-1/2 after:h-[200vh] after:absolute after:w-[1px] after:bg-white after:-translate-y-1/2"
           >
             <span
               style={{ display: isMouseMoving ? "none" : "block" }}
