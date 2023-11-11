@@ -9,7 +9,7 @@ export default function SideNav({ listItems, left }: SideNavProps) {
       left: left ? "32px" : "",
       right: left ? "" : "32px",
       transform: left ? "scale(-1,-1)" : "",
-      textTransform: left ? "uppercase" : "lowercase",
+      textTransform: left ? ("uppercase" as const) : ("lowercase" as const),
     },
   };
 

@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Gravitas_One, Oswald, Arvo } from "next/font/google";
+import { NAV_ITEMS } from "@/data/constants";
+import SideNav from "@/components/SideNav";
 import "./globals.css";
 
 const arvo = Arvo({
@@ -35,7 +37,11 @@ export default function RootLayout({
       lang="en"
       className={`${arvo.variable} ${oswald.variable} ${gravitas.variable}`}
     >
-      {children}
+      <body className="relative font-arvo text-white bg-dark-knight [&_*]:cursor-none">
+        <SideNav listItems={NAV_ITEMS.left} left></SideNav>
+        <SideNav listItems={NAV_ITEMS.right}></SideNav>
+        {children}
+      </body>
     </html>
   );
 }
